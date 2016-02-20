@@ -1,0 +1,22 @@
+{
+  "name": "t-town-trouble",
+  "version": "1.0.0",
+  "description": "Hack Summit 2016 Hackathon project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0pt1c/t-town-trouble.git"
+  },
+  "author": "Chris Bryant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0pt1c/t-town-trouble/issues"
+  },
+  "homepage": "https://github.com/0pt1c/t-town-trouble#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
