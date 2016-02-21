@@ -2,12 +2,9 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
     <title>Hackathon 2016 Project</title>
 
@@ -16,17 +13,17 @@
     <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbower -->
 
-  <!-- bower:css -->
-  <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
-  <!-- endbower -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- endbower -->
 
-  <!-- inject:css -->
-  <link rel="stylesheet" href="/css/bootstrap-solarized-dark.css">
-  <!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/css/bootstrap-solarized-dark.css">
+    <!-- endinject -->
 
-  <!-- inject:js -->
-  <script src="/js/app.js"></script>
-  <!-- endinject -->
+    <!-- inject:js -->
+    <script src="/js/app.js"></script>
+    <!-- endinject -->
 <style>
 body {
   padding-top: 70px;
@@ -47,21 +44,17 @@ body {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="#">Library Demo App</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
+                  <% for(var i=0; i<nav.length;i++) {%>
+                    <li><a href="<%=nav[i].Link%>"><%=nav[i].Text%></a></li>
+                  <%}%>
                 </ul>
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -71,21 +64,17 @@ body {
     <!-- Page Content -->
     <div class="container">
 
+      <% for(var i=0; i<books.length;i++) {%>
         <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1>A Bootstrap Starter Template</h1>
-                <p class="lead">Complete with pre-defined file paths that you won't have to change!</p>
-                <ul class="list-unstyled">
-                    <li>Bootstrap v3.3.6</li>
-                    <li>jQuery v1.11.1</li>
-                </ul>
-            </div>
+          <h3><%=books[i].title%></h3>
+          <h4><%=books[i].author%></h4>
+          <small><a href="/books/<%=i%>">Read more</a></small>
         </div>
+      <%}%>
         <!-- /.row -->
 
     </div>
     <!-- /.container -->
-
 
 </body>
 
