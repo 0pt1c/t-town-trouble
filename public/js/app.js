@@ -1,1 +1,1 @@
-var this = "this";
+var word = "this";
