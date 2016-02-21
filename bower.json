@@ -1,0 +1,21 @@
+{
+  "name": "t-town-trouble",
+  "description": "Hack Summit 2016 Hackathon project",
+  "main": "app.js",
+  "authors": [
+    "Chris Bryant"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/0pt1c/t-town-trouble",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
