@@ -1,5 +1,4 @@
 
-bower_components/
 build/
 dist/
 
@@ -34,6 +33,8 @@ build/Release
 # Dependency directories
 node_modules
 jspm_packages
+bower_components
+public/lib
 
 # Optional npm cache directory
 .npm
