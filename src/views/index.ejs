@@ -64,7 +64,20 @@ body {
     <!-- Page Content -->
     <div class="container">
         <div class="row">
+          <br>
+          <div class="col-md-2 col-sm-3 test-center">
+          Sign in
+        </div>
+        <div class="col-md-10 col-sm-9">
+          Sign up
+            <form name="signUpForm"
+                  action="/auth/signUp"
+                  method="post">
+            <input name="userName" id="userName">
+            <input name="password" id="password">
+            <input type="sumbit" value="Sign up">
 
+            </form>
         </div>
         <!-- /.row -->
     </div>
