@@ -1,3 +1,5 @@
+# VSCode project files
+.vscode/
 
 build/
 dist/
