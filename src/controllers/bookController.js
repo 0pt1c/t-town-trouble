@@ -4,9 +4,9 @@ var ObjectId = require('mongodb').ObjectId;
 var bookController = function(bookService, nav) {
 
   var middleware = function (req, res, next) {
-    if (!req.user) {
-      res.redirect('/');
-    }
+    // if (!req.user) {
+    //   res.redirect('/');
+    // }
     next();
   };
 
@@ -14,17 +14,17 @@ var bookController = function(bookService, nav) {
     var url = 'mongodb://localhost:27017/libraryApp';
 
     mongodb.connect(url, function (err, db) {
-        var collection = db.collection('books');
+      var collection = db.collection('books');
 
-        collection.find({}).toArray(
-          function(err, results) {
-            res.render('bookListView', {
+      collection.find({}).toArray(
+        function(err, results) {
+          res.render('bookListView', {
             title: 'Books',
             nav: nav,
             books: results
           });
-          });
-      });
+        });
+    });
   };
 
   var getById = function(req, res) {
@@ -49,12 +49,12 @@ var bookController = function(bookService, nav) {
             });
         });
     });
+  };
 
-    return {
-      getIndex: getIndex,
-      getById: getById,
-      middleware: middleware
-    };
+  return {
+    getIndex: getIndex,
+    getById: getById,
+    middleware: middleware
   };
 };
 
