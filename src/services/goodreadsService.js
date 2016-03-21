@@ -5,6 +5,7 @@ var goodreadsService = function() {
       description: 'Our Description'
     });
   };
+
   return {
     getBookById: getBookById
   };
