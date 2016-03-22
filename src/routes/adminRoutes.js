@@ -7,12 +7,14 @@ var books = [
     title: 'iWoz',
     genre: 'Autobiography',
     author: 'Steve Wozniak',
+    bookId: 798635,
     read: true
   },
   {
     title: 'Snowcrash',
     genre: 'Science Fiction',
     author: 'Neal Stephenson',
+    bookId: 830,
     read: true
   },
   {
